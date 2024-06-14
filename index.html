@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <script
+        src="https://aframe.io/releases/1.0.4/aframe.min.js">
+   </script>
+
+ 
+</head>
+
+<body>
+<a-scene>
+
+    <a-sky src = "Desert.jpg"></a-sky>
+
+    <a-assets>
+        <a-asset id = "train" src = "Train Model.glb"> </a-asset>
+    </a-assets>
+    
+    <a-camera position = "0 0 5"></a-camera>
+
+    <a-entity gltf-model = "#train" position = "0 -10 -150"></a-entity>
+</a-scene>
+    
+</body>
+
+</html>
